@@ -1,0 +1,10 @@
+# 应用服务 WEB 访问端口
+server:
+  port: 80
+
+# 应用名称
+spring:
+  application:
+    name: authentication-center-security
+  profiles:
+    active: dev

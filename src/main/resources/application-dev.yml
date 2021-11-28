@@ -1,0 +1,26 @@
+spring:
+  neo4j:
+    uri: bolt://localhost:7687
+    authentication:
+      username: neo4j
+      password: ENC(IUocnVaeuYwKRsjis4Ke7FrL4BerWidn)
+  datasource:
+    url: jdbc:postgresql://localhost:5432/fxdb?currentSchema=authentication
+    username: wade
+    password: ENC(MNJLXDdz0XJMSW2X0pX6G2+2o0hs7iUo)
+    driver-class-name: org.postgresql.Driver
+  jackson:
+    time-zone: GMT+8
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        format: true
+        ddu-auto: none
+
+# 加密密钥
+jasypt:
+  encryptor:
+    password: fxfby@1025
+    iv-generator-classname: org.jasypt.iv.NoIvGenerator
+    algorithm: PBEWithMD5AndDES
