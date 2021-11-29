@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "snow-flake.data-center-id",
+      "type": "java.lang.String",
+      "description": "Description for snow-flake.data-center-id."
+  }
+] }

@@ -14,9 +14,12 @@ spring:
   jpa:
     properties:
       hibernate:
-        show_sql: true
         format: true
-        ddu-auto: none
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+snow-flake:
+  data-center-id: 1025
 
 # 加密密钥
 jasypt:
